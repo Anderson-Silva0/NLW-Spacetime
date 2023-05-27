@@ -1,0 +1,30 @@
+GET http://localhost:3333/memories
+
+GET http://localhost:3333/memories/bb0e9ce0-46ee-4607-830a-47b67e80b177
+
+POST http://localhost:3333/memories
+Content-Type: application/json 
+
+{
+  "content": "test",
+  "coverUrl": "https://github.com/anderson-silva0",
+  "isPublic": true
+}
+
+PUT http://localhost:3333/memories/bb0e9ce0-46ee-4607-830a-47b67e80b177
+Content-Type: application/json 
+
+{
+  "content": "testando o PUT",
+  "coverUrl": "https://github.com/anderson-silva0",
+  "isPublic": true
+}
+
+DELETE http://localhost:3333/memories/ceb297d0-efd0-46a5-99dc-c91b6e23d27d
+
+  POST http://localhost:3333/register
+  Content-Type: application/json 
+
+  {
+    "code": "7e67e0d7e53604ccf527"
+  }
